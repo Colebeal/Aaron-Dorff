@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #817562;
+    font-weight: 400;
+    font-size: .9rem;
+    line-height: 1.625;
+}
+
+
+h2 {
+    font-size: inherit;
+}
+.main-header {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo-link {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.logo-link a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-nav {
+    text-align: center;
+    margin-top: .5rem;
+
+}
+
+.main-nav__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav__item {
+    width: 25vw;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.main-nav__item a{
+    color: #544128;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #544128;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    font-weight: 500;
+    border-bottom: 2px solid #544128;
+}

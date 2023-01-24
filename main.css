@@ -1,0 +1,37 @@
+.gallery {
+    width: 100vw;
+    margin: 1rem;
+}
+
+.gallery--items {
+    margin: 1rem;
+    /* padding: 1rem; */
+    contain: content;
+    text-align: center;
+}
+
+.gallery--item img {
+    width: 100vw;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+.home-message {
+    text-align: center;
+}
+
+.home-message__box {
+    /* background: rgba(250, 238, 223, 0.507); */
+    margin: 1rem;
+    padding: 1rem 2rem 1.5rem 2rem;
+    border: solid 1px #817562;;
+    text-align: center;
+    color: #817562;
+}
+
+.home-message__title {
+    font-weight: 600;
+    font-style: normal;
+    padding: .5rem;
+}
