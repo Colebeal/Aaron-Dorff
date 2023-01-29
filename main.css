@@ -1,31 +1,86 @@
+
+/* Gallery */
+
 .gallery {
-    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     margin: 1rem;
 }
 
-.gallery--items {
-    margin: 1rem;
-    /* padding: 1rem; */
-    contain: content;
-    text-align: center;
+.gallery > .grid{
+    flex: 1 1 40%;
 }
 
-.gallery--item img {
-    width: 100vw;
-    display: block;
-    margin-bottom: 1rem;
+.gallery > .sidebar {
+    flex: 1 1 40%;
 }
 
-
-.home-message {
-    text-align: center;
+.gallery > #feature-3 {
+    flex: 1 1 100%;
 }
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.grid > * {
+    flex: 1 1 100%;
+}
+
+.col {
+    background-color: #d8d0c3;
+    border: 2px solid #edecea;
+    width: 300px;
+    height: 300px;
+    padding: 5rem;
+}
+
+.sidebar {
+    background-image: url(/images/Table-Vertical.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 70%;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 400px;
+}
+
+#feature-1{
+    background-image: url(/images/Table-cup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 30%;
+}
+
+#feature-2{
+    background-image: url(/images/Table-corner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45% 20%;
+}
+
+#feature-3{
+    background-image: url(/images/Table-set.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 25%;
+    height: 400px;
+}
+
+/* Home Message */
 
 .home-message__box {
-    /* background: rgba(250, 238, 223, 0.507); */
-    margin: 1rem;
-    padding: 1rem 2rem 1.5rem 2rem;
-    border: solid 1px #817562;;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    /* padding: 1rem 2rem 1.5rem 2rem; */
+    border: solid 1px #edecea;
     text-align: center;
     color: #817562;
 }
@@ -33,5 +88,46 @@
 .home-message__title {
     font-weight: 600;
     font-style: normal;
-    padding: .5rem;
+    /* padding: .5rem; */
+}
+
+@media (min-width: 40rem) {
+    
+    /* Gallery Desktop */
+    
+    .gallery{
+        margin: 0 2rem;        
+    }
+
+    .sidebar {
+        background-position: 50% 80%;
+        height: 628px;
+        width: 261px;
+    }
+    
+    #feature-1{
+        background-position: 0 20%;
+    }
+    
+    #feature-2{
+        background-position: 0% 20%;
+    }
+    
+    #feature-3{
+        background-position: 0% 25%;
+        height: 400px;
+    }
+
+    /* Home Message Desktop */
+    
+    .home-message {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-message__box {
+        max-width: 1260px;
+        padding: 2rem;
+    }
 }
